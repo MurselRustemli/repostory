@@ -1,0 +1,187 @@
+header {
+    .server {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        .server_title {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+
+            i {
+                font-size: 25px;
+            }
+
+            h1 {
+                font-family: sans-serif;
+                font-weight: 100;
+            }
+        }
+
+        .server_ikonlar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .server_ikons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                .server_ikons_ikn {
+                    i {
+                        font-size: 27px;
+                    }
+                }
+
+                .server_ikons_text {
+                    h5 {
+                        font-family: sans-serif;
+                        color: #b2b8bd;
+                    }
+
+                    p {
+                        font-family: sans-serif;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        height: 60px;
+        background-color: #343a40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav_all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav_btn {
+                display: none;
+                color: white;
+            }
+
+            .nav_desk {
+                width: 100%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    color: white;
+                    li{
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+
+                    li {
+                        font-family: sans-serif;
+                    }
+
+                    .nav_desk_host {
+                        &:hover .nav_desk_host_hover {
+                            display: block;
+                        }
+
+                        .nav_desk_host_hover {
+                            display: none;
+                            position: absolute;
+                            background-color: white;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+
+                                li {
+                                    margin-top: 10px;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .nav_click{
+                background-color: white;
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 0;
+                height: 100%;
+                width: 0;
+                overflow: hidden;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 10px;
+                    li{
+                        
+                    }
+                }
+                .nav_exit{
+                    position: absolute;
+                    right: 20px;
+                    top: 100px;
+                }
+            }
+            .nav_btns {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 10px;
+
+                .nav_btns_register {
+                    color: white;
+                    background-color: #343a40;
+                    border: 1px solid #7cbd1e;
+                    height: 30px;
+                    width: 30%;
+                }
+
+                .nav_btns_login {
+                    color: white;
+                    border: none;
+                    background-color: #7cbd1e;
+                    height: 30px;
+                    width: 30%;
+
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        nav {
+            .nav_all {
+                .nav_desk {
+                    display: none;
+                }
+
+                .nav_btn {
+                    display: block;
+                }
+            }
+        }
+    }
+}

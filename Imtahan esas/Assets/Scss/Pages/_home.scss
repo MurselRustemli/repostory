@@ -1,0 +1,191 @@
+main {
+
+    // SECTION HOST
+    // |
+    // |
+    // |
+    // V
+    #host {
+        background-image: url(/Assets/Image/host\ bg.webp);
+
+        .host_all {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 150px;
+
+            .host_home {
+                h1 {
+                    color: white;
+                    font-family: sans-serif;
+                }
+
+                p {
+                    color: white;
+                    font-family: sans-serif;
+
+                }
+            }
+        }
+    }
+
+    // SECTION SHARE
+    // |
+    // |
+    // |
+    // V
+    #share {
+        .share_all {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-family: sans-serif;
+                margin-top: 100px;
+            }
+
+            .share_carts {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 100px;
+
+                .share_carts_cart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    gap: 30px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                    i {
+                        font-size: 40px;
+                        color: #7cbd1e;
+                    }
+
+                    h3 {
+                        font-family: sans-serif;
+                    }
+
+                    p {
+                        font-family: sans-serif;
+
+                    }
+
+                    button {
+                        height: 40px;
+                        width: 70%;
+                        background-color: #7cbd1e;
+                        border: none;
+                        color: white;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 100px;
+
+                    .share_carts_cart {
+                        width: 60%;
+
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION SATIS
+    // |
+    // |
+    // |
+    // V
+    #satis {
+        margin-top: 100px;
+
+        .satis_all {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            height: 500px;
+            background-image: url("/Assets/Image/satis\ bg.webp");
+
+            h1 {
+                font-family: sans-serif;
+                color: white;
+            }
+
+            p {
+                font-family: sans-serif;
+                color: white;
+
+            }
+
+            button {
+                height: 40px;
+                width: 40%;
+                border: none;
+                background-color: #7cbd1e;
+                color: white;
+            }
+        }
+    }
+
+    // SECTION CRUD
+    // |
+    // |
+    // |
+    // V
+    #crud {
+        .crud_all {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                margin-top: 100px;
+                font-family: sans-serif;
+            }
+
+            .crud_carts {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                flex-wrap: wrap;
+
+                .crud_div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid #e6e6e6;
+                    width: 80%;
+                    &:hover {
+                        background-color: #7cbd1e;
+                        border: none;
+
+                        i {
+                            color: white;
+                        }
+
+                        h3 {
+                            color: white;
+                        }
+
+                        p {
+                            color: white;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header .server {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+header .server .server_title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+header .server .server_title i {
+  font-size: 25px;
+}
+header .server .server_title h1 {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+header .server .server_ikonlar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .server .server_ikonlar .server_ikons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .server .server_ikonlar .server_ikons .server_ikons_ikn i {
+  font-size: 27px;
+}
+header .server .server_ikonlar .server_ikons .server_ikons_text h5 {
+  font-family: sans-serif;
+  color: #b2b8bd;
+}
+header .server .server_ikonlar .server_ikons .server_ikons_text p {
+  font-family: sans-serif;
+}
+@media screen and (max-width: 768px) {
+  header .server .server_ikonlar .server_ikons .server_ikons_text {
+    display: none;
+  }
+}
+header nav {
+  height: 60px;
+  background-color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav_all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav_all .nav_btn {
+  display: none;
+  color: white;
+}
+header nav .nav_all .nav_desk {
+  width: 100%;
+}
+header nav .nav_all .nav_desk ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+header nav .nav_all .nav_desk ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav .nav_all .nav_desk ul li {
+  font-family: sans-serif;
+}
+header nav .nav_all .nav_desk ul .nav_desk_host:hover .nav_desk_host_hover {
+  display: block;
+}
+header nav .nav_all .nav_desk ul .nav_desk_host .nav_desk_host_hover {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header nav .nav_all .nav_desk ul .nav_desk_host .nav_desk_host_hover ul {
+  display: flex;
+  flex-direction: column;
+}
+header nav .nav_all .nav_desk ul .nav_desk_host .nav_desk_host_hover ul li {
+  margin-top: 10px;
+  color: black;
+}
+header nav .nav_all .nav_click {
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+}
+header nav .nav_all .nav_click ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10px;
+}
+header nav .nav_all .nav_click .nav_exit {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+header nav .nav_all .nav_btns {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+header nav .nav_all .nav_btns .nav_btns_register {
+  color: white;
+  background-color: #343a40;
+  border: 1px solid #7cbd1e;
+  height: 30px;
+  width: 30%;
+}
+header nav .nav_all .nav_btns .nav_btns_login {
+  color: white;
+  border: none;
+  background-color: #7cbd1e;
+  height: 30px;
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  header nav .nav_all .nav_desk {
+    display: none;
+  }
+  header nav .nav_all .nav_btn {
+    display: block;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+main #host {
+  background-image: url(/Assets/Image/host\ bg.webp);
+}
+main #host .host_all {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 150px;
+}
+main #host .host_all .host_home h1 {
+  color: white;
+  font-family: sans-serif;
+}
+main #host .host_all .host_home p {
+  color: white;
+  font-family: sans-serif;
+}
+main #share .share_all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #share .share_all h1 {
+  font-family: sans-serif;
+  margin-top: 100px;
+}
+main #share .share_all .share_carts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+main #share .share_all .share_carts .share_carts_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main #share .share_all .share_carts .share_carts_cart i {
+  font-size: 40px;
+  color: #7cbd1e;
+}
+main #share .share_all .share_carts .share_carts_cart h3 {
+  font-family: sans-serif;
+}
+main #share .share_all .share_carts .share_carts_cart p {
+  font-family: sans-serif;
+}
+main #share .share_all .share_carts .share_carts_cart button {
+  height: 40px;
+  width: 70%;
+  background-color: #7cbd1e;
+  border: none;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  main #share .share_all .share_carts {
+    flex-direction: column;
+    gap: 100px;
+  }
+  main #share .share_all .share_carts .share_carts_cart {
+    width: 60%;
+  }
+}
+main #satis {
+  margin-top: 100px;
+}
+main #satis .satis_all {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 500px;
+  background-image: url("/Assets/Image/satis bg.webp");
+}
+main #satis .satis_all h1 {
+  font-family: sans-serif;
+  color: white;
+}
+main #satis .satis_all p {
+  font-family: sans-serif;
+  color: white;
+}
+main #satis .satis_all button {
+  height: 40px;
+  width: 40%;
+  border: none;
+  background-color: #7cbd1e;
+  color: white;
+}
+main #crud .crud_all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #crud .crud_all h1 {
+  margin-top: 100px;
+  font-family: sans-serif;
+}
+main #crud .crud_all .crud_carts {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+main #crud .crud_all .crud_carts .crud_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e6e6e6;
+  width: 80%;
+}
+main #crud .crud_all .crud_carts .crud_div:hover {
+  background-color: #7cbd1e;
+  border: none;
+}
+main #crud .crud_all .crud_carts .crud_div:hover i {
+  color: white;
+}
+main #crud .crud_all .crud_carts .crud_div:hover h3 {
+  color: white;
+}
+main #crud .crud_all .crud_carts .crud_div:hover p {
+  color: white;
+}
+
+footer {
+  background-color: #393e46;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+footer p {
+  color: #888b90;
+}/*# sourceMappingURL=main.css.map */

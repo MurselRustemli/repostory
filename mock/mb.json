@@ -1,0 +1,9 @@
+{
+  "posts": [
+    { "id": 1,"i":"fa-solid fa-fire", "name": "High Quality Hardware", "text": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos." }
+ ,
+    { "id": 2,"i":"fa-solid fa-fire", "name": "Top Data Centers", "text": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos." }
+ ,
+ { "id": 3,"i":"fa-solid fa-fire", "name": "Outstanding Speed", "text": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos." }
+  ]
+}
